@@ -1,0 +1,20 @@
+body {
+    background-color: #999;
+}
+
+.people-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.people-container div {
+    width: 300px;
+    height: 350px;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 2px 3px 10px black;
+}

@@ -1,8 +1,12 @@
 let peoples = []
 const peoplesDiv = document.querySelector('.people-container')
 const people = JSON.parse(localStorage.getItem('user'))
-console.log(people);
-//peoples.push(peopleParse)
+peoples.push(people)
+if(peoples.length == 0){
+    peoples.push(people)
+}else if(peoples.length > 0){
+    showRandomPeople(peoples)
+}
 
 function createRandomPeople(){
     fetch('https://randomuser.me/api/?results=10').then((results)=>{
