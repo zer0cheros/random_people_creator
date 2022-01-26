@@ -2,9 +2,7 @@ let peoples = []
 const peoplesDiv = document.querySelector('.people-container')
 const people = JSON.parse(localStorage.getItem('user'))
 peoples.push(people)
-if(peoples.length == 0){
-    peoples.push(people)
-}else if(peoples.length > 0){
+if(peoples.length !== 0){
     showRandomPeople(peoples)
 }
 
